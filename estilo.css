@@ -1,0 +1,146 @@
+html{
+    font-family: sans-serif;    
+}
+
+.img_main_fundo{
+    background-image: url(Imagens/Foto\ 01.jpg);
+    background-size: cover;
+    /*background-position: right center;*/
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header{
+    text-align: center;
+    margin: auto;
+    background-color: #05C7F2;    
+}
+
+.header_logo{
+    width: 4em;
+    height: auto;
+}
+
+#hamburguer{
+    background-color: #72A603;
+    color: #05C7F2;
+    display: block;
+    text-align: center;
+    padding: .3em;
+    cursor: pointer;
+    font-size: 2em;
+}
+
+.headernav{
+    background-color: #05C7F2;
+    display: none;
+}
+
+.headernav.show{
+    display: block;
+}
+
+ul{
+    margin: 0;
+}
+
+.headernav ul{
+    list-style-type: none;
+    padding: 0;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-size: .8em;
+}
+
+.headernav a{
+    color: #72A603;
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+}
+
+.headernav a:hover{
+    background-color: color-mix(in srgb, #f1d12e, #ffffff 10%);
+    color: rgb(150, 12, 12);    
+}
+
+footer{
+    background-color: #05C7F2;
+    padding: 1em;
+    text-align: center;
+}
+
+p{
+    margin: 0;
+    padding: 1.5em;
+    color: #72A603;
+}
+
+.footer_logo{
+    display: flex; 
+    flex-direction: column;   
+    gap: 1em;
+    margin: .5em;    
+}
+
+.tamanho{
+    width: 2.5em;    
+}
+
+.galeria a{
+    text-decoration: none;
+    color: #72A603;
+    display: inline-block;
+    background-color: #05C7F2;
+    padding: 1em 1.8em;
+    font-size: 1.5em;
+    border-radius: 5px; 
+}
+
+@media screen and (min-width: 48em){
+    #hamburguer{
+        display: none;
+    }
+
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #05C7F2;
+    }
+
+    .header_logo{
+        margin-left: 2em;
+    }
+
+    .headernav{
+        display: block;
+    }
+
+    .headernav ul{
+        margin-right: 2em;
+        font-size: .9em;
+    }
+
+    .headernav li{
+        display: inline-block;
+    }
+
+    .headernav a{
+        border-radius: 5px;
+    } 
+      
+    .footer_logo{
+        flex-direction: row;
+        justify-content: center;
+        gap: 1em;        
+        margin-top: 2em;
+    }    
+
+    .tamanho{
+        width: 2.5em;
+    }  
+   
+}
